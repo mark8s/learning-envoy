@@ -11,7 +11,7 @@ Envoy is the implementation of Istio's data plane. It is currently very popular,
 
 - Http Route Table: HTTP 的路由规则，例如请求的域名，Path 符合什么规则，转发给哪个 Cluster。
 
-- Cluster : 集群（cluster）是 Envoy 连接到的一组逻辑上相似的上游主机。Envoy 通过服务发现发现集群中的成员。Envoy 可以通过主动运行状况检查来确定集群成员的健康状况。Envoy 如何将请求路由到集群成员由负载均衡策略确定。
+- Cluster : 集群（cluster）是 Envoy 连接到的一组逻辑上相似的上游主机，类似Kubernetes 中的一个 Service 。Envoy 通过服务发现发现集群中的成员。Envoy 可以通过主动运行状况检查来确定集群成员的健康状况。Envoy 如何将请求路由到集群成员由负载均衡策略确定。
 
 - endpoint : 一个具体的“应用实例”，对应 ip 和端口号，类似 Kubernetes 中的一个 Pod。
 
